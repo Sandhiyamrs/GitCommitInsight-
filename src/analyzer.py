@@ -2,10 +2,12 @@ from src.git_reader import get_git_commits
 from src.checks.commit_frequency import analyze_commit_frequency
 from src.checks.bad_messages import detect_bad_commit_messages
 from src.checks.dead_days import detect_dead_days
+from checks.commit_size import analyze_commit_size
 
 class GitCommitAnalyzer:
     def run(self):
         commits = get_git_commits()
+results["commit_size"] = analyze_commit_size(commit_data)
 
         return {
             "total_commits": len(commits),
