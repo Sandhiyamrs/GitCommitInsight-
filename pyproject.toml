@@ -1,0 +1,8 @@
+[project]
+name = "gitcommitinsight"
+version = "0.1.0"
+description = "Analyze git commit history for productivity and quality"
+requires-python = ">=3.9"
+
+[project.scripts]
+gitcommitinsight = "gitcommitinsight.cli.cli:main"
